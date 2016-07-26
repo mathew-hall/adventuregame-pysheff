@@ -5,7 +5,7 @@ give_words = {'give', 'feed', 'present'}
 use_words = {'eat', 'use', 'wear'}
 fight_words = {'fight', 'kill', 'hit', 'attack'}
 prepositions = {'up', 'down', 'on', 'under', 'in', 'at', 'to'}
-
+wait_words = {'wait', 'sleep'}
 drop_words = {'drop'}
 look_words = {'look', 'inspect', 'examine'}
 inventory_names = {'inventory', 'possessions', 'belongings', 'bag'}
