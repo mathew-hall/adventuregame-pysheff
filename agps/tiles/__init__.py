@@ -1,4 +1,4 @@
-from . import start, n1, s1, e1, e2, w1, n1w1, w2, s1w2, n1e1, s2, s3, s1e1
+from . import start, n1, s1, e1, e2, w1, n1w1, w2, s1w2, n1e1, s2, s3, s1e1, s1w1, s2w1
 
 grid = {
     (0, 0): start,
@@ -15,4 +15,6 @@ grid = {
     (-2, -1): s1w2,
     (1, 1): n1e1,
     (1, -1): s1e1
+    (-1, -1): s1w1,
+    (-1, -2): s2w1,
 }
