@@ -25,7 +25,7 @@ def main():
             tile = grid[x,y]
             move = tile.enter(name, inventory)
             dx, dy = process_move(move)
-            new_locn = x+dx, y+dy
+            new_locn = x + dx, y + dy
             if new_locn in grid:
                 x, y = new_locn
             else:
