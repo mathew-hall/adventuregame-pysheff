@@ -26,8 +26,10 @@ def action_prompt(inventory):
         for item, n in inventory.most_common():
             print(item, '(%d)' % n)
         return action_prompt(inventory)
-    if len(action) == 2 and (action[0] in move_words) and (action[1] in move_directions):
-        return (move, action[1][0])
+    if len(action) == 2 and (action[0] in move_words) and (action[-1] in move_directions):
+        return (move, action[-1][0])
+    if len(action) == 1 and (action[-1] in move_directions):
+        return (move, action[-1][0])
     return action
 
 take_words = {'pick', 'take', 'get', 'collect'}
