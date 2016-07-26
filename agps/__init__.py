@@ -35,3 +35,5 @@ def main():
             
     except GameWon:
         print("Congratulations!")
+    except (EOFError, KeyboardInterrupt):
+        print("Bye!")
