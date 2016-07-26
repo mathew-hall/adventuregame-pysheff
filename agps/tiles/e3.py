@@ -10,15 +10,15 @@ timer = -1
 launch_code = 'piece of paper labelled: 000000'
 def take_instruments(inventory):
     
-    def instrument_type():
+    def paper_type():
         return random.choice(['new world order plan','compromising photograph of a world leader',launch_code])
     
     if scene_contents['world domination plans'] > 0:
         inventory['world domination plans'] += 1
         scene_contents['world domination plans'] -= 1
-        inst_type = instrument_type()
-        inventory['inst_type'] = 1
-        print("You shuffle through the papers and grab a %s"%inst_type)
+        paper = paper_type()
+        inventory['paper'] = 1
+        print("You shuffle through the papers and grab a %s"%paper)
     else:
         print("Looks like someone's already cleaned the office out")
 
