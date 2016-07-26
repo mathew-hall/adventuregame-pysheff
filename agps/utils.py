@@ -35,9 +35,13 @@ def action_prompt(inventory):
 
 take_words = {'pick', 'take', 'get', 'collect'}
 
+
 class GameWon(Exception):
     """Abuse exception handling to escape the game loop when we finish."""
     pass
 class GameLost(Exception):
-	"""More exception handling abuse to lose the game"""
-	pass
+    """More exception handling abuse to lose the game"""
+    pass
+
+talk_words = {'talk', 'speak', 'converse' 'say'}
+
