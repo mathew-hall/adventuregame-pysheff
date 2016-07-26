@@ -56,4 +56,4 @@ def print_grid(grid):
     max_y = max(y)
     
     for y in range(max_y,min_y,-1):
-        print(["?X"[visited((x,y))] if (x,y) in grid.keys() else "_" for x in range(min_x,max_x)])
+        print(["_X"[visited((x,y))] if (x,y) in grid.keys() else "_" for x in range(min_x,max_x)])
