@@ -11,7 +11,7 @@ launch_code = 'piece of paper labelled: 000000'
 def take_instruments(inventory):
     
     def instrument_type():
-        return random.choice(['new world order plan','compromising photograph of a world leader',good_choice])
+        return random.choice(['new world order plan','compromising photograph of a world leader',launch_code])
     
     if scene_contents['world domination plans'] > 0:
         inventory['world domination plans'] += 1
