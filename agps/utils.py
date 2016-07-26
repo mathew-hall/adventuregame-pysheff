@@ -33,3 +33,4 @@ def action_prompt(inventory):
     return action
 
 take_words = {'pick', 'take', 'get', 'collect'}
+talk_words = {'talk', 'speak', 'converse' 'say'}
