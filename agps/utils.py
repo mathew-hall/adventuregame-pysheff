@@ -1,11 +1,12 @@
+
 move = object()
 move_directions = {'n', 'e', 's', 'w', 'north', 'east', 'south', 'west'}
 move_words = {'move', 'walk', 'go'}
-give_words = {'give', 'feed', 'present'}
+give_words = {'give', 'feed', 'present','sell'}
 use_words = {'eat', 'use', 'wear'}
 fight_words = {'fight', 'kill', 'hit', 'attack'}
 prepositions = {'up', 'down', 'on', 'under', 'in', 'at', 'to'}
-
+wait_words = {'wait', 'sleep'}
 drop_words = {'drop'}
 look_words = {'look', 'inspect', 'examine'}
 inventory_names = {'inventory', 'possessions', 'belongings', 'bag'}
@@ -33,3 +34,14 @@ def action_prompt(inventory):
     return action
 
 take_words = {'pick', 'take', 'get', 'collect'}
+
+
+class GameWon(Exception):
+    """Abuse exception handling to escape the game loop when we finish."""
+    pass
+class GameLost(Exception):
+    """More exception handling abuse to lose the game"""
+    pass
+
+talk_words = {'talk', 'speak', 'converse' 'say'}
+

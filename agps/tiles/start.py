@@ -1,12 +1,9 @@
 """(0, 0) - the square where the game starts and ends."""
 
-from agps.utils import action_prompt, move, take_words
+from agps.utils import action_prompt, move, take_words, GameWon
 
 KEYS_NEEDED = 3
 
-class GameWon(Exception):
-    """Abuse exception handling to escape the game loop when we finish."""
-    pass
 
 scene_contents = dict(keys_used = 0,
                       rope = 1,
